@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BMI Calculator</title>
+    <!-- Link to Bootstrap stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- Link to custom CSS stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <h1 class="text-center text-primary">BMI Calculator</h1>
+            <div class="form-group">
+              <label for="weightInput">Weight (kg)</label>
+              <input type="number" class="form-control" id="weightInput" />
+            </div>
+            <div class="form-group">
+              <label for="heightInput">Height (m)</label>
+              <input type="number" class="form-control" id="heightInput" />
+            </div>
+            <button type="button" class="btn btn-primary" id="calculateBtn">
+              Calculate BMI
+            </button>
+          </form>
+          <div id="result" class="mt-2 text-primary"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link to JavaScript file -->
+    <script src="app.js"></script>
+  </body>
+</html>
